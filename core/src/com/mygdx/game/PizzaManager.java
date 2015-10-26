@@ -9,9 +9,13 @@ import com.badlogic.gdx.utils.Array;
 /**
  * Created by Aaron Weaver on 7/6/2015.
  */
+
+//////////////////////////////////////////////
+// Manages pizzas
+
 public class PizzaManager
 {
-    private Array<Pizza> PizzaList;
+    private Array<Pizza> PizzaList;// list of all pizzas active and inactive
     private int xPos,yPos;
     private int xGrid;
     private int MAX_PIZZA_LINE=5; //how many in a line across the screen
@@ -64,7 +68,7 @@ public class PizzaManager
         int spritetype;
 
         // MathUtils.random(0, 800 - 64)
-        // after 30 game ticks, add a new line of cash
+        // after 30 game ticks, add a new line of pizzas
 
         sX=(int)GameDimensions.GameAreaStartx;
 

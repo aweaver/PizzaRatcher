@@ -6,6 +6,10 @@ import com.badlogic.gdx.utils.Array;
 
 /**
  * Created by Aaron Weaver on 7/20/2015.
+ *
+ * This manages the rats at the bottom of the screen.
+ * At higher difficulty levels these will get longer so there is less space for the pizzas to fall.
+ * The game gets faster and harder that way.
  */
 public class RatManager
 {
@@ -51,8 +55,8 @@ public class RatManager
     {
         int a;
 
-        // for now do nothing but later we should
-        //change the hand types
+       //for now do nothing
+        //later rats will grow longer
 
         /*
         for (a=0;a<MAX_HANDS;a++)

@@ -138,6 +138,7 @@ wavSound.play(0.5f);
 
 		batch.begin();
 
+        //show score and later hunger level
 		font.draw(batch, scoreString + score, GameDimensions.TextStartx, GameDimensions.TextStarty);
 
 		//sprite.draw(batch);
@@ -159,7 +160,7 @@ wavSound.play(0.5f);
         ratlist.update();
 
         newCashLine++;
-        if(newCashLine>=30)
+        if(newCashLine>=30)//new slice added every 30 ticks
         {
             pizzaManager.addPizza();
             newCashLine=0;
@@ -193,17 +194,17 @@ wavSound.play(0.5f);
     void playfirstPickup()
     {
         wavSound.play(0.10f);
-    }
+    }//play sound at 10th of volume
 
     void playSecondPickup()
     {
         wavSound.play(0.50f);
-    }
+    }//play at half volume
 
     void playlastPickup()
     {
         wavSound.play();
-    }
+    }//flay at full volume
 
 
 	@Override
@@ -239,7 +240,9 @@ wavSound.play(0.5f);
 
             if(tpizza!=null)
             {
-
+                //0 first time or at the end of a sequence of selections
+                //1 two of the same type of pizza touched
+                //2 three of the same type touched
 
                 if(matchCnt==0 )
                 {

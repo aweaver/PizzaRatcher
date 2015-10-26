@@ -6,10 +6,14 @@ import com.badlogic.gdx.utils.Array;
 
 /**
  * Created by Aaron Weaver on 7/4/2015.
+ *
  */
+
+//////////////////////////////////////////
+// Handles list of sprites
 public class SpriteList
 {
-    static final public int PLAIN_SPRITE_ID=0;
+    static final public int PLAIN_SPRITE_ID=0;//make these sequential
     static final public int CHEESE_SPRITE_ID=1;
     static final public int PEPPERONI_SPRITE_ID=2;
     static final public int MUSHROOM_SPRITE_ID=3;
@@ -30,6 +34,8 @@ public class SpriteList
     {
         Sprite tSprite;
         Texture img;
+
+        //add new sprites to bottom
 
         //add dollar
         img = new Texture("Plain.png");

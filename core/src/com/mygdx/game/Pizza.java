@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 /**
  * Created by Aaron Weaver on 7/4/2015.
  */
+
 public class Pizza
 {
     private int x;
